@@ -1,4 +1,6 @@
-﻿FINDING  SIMILAR  IMAGES
+# Image Similarity on Animal Dataset
+
+This project intends to extract similar images to the one as the query image.
 
 
     1. tsne_feature_extractor.py
@@ -11,16 +13,18 @@ In this notebook, clusters were found out using Kmeans and DBSCAN. Mainly DBSCAN
 Takes query image as input and outputs the most similar images obtained by “structural similarity” score.
 
 
-'''
 To execute:
-
+```
 python similar_images_finder.py -q <input filepath> -n <number of images>
+```
 OR
+```
 python similar_images_finder.py --query <input filepath> --num_images <number of images>
-
+```
 
 Example:
-
+```
 python similar_images_finder.py -q images/0.jpg -n 9
-'''
-
+```
+Output:
+![](output_samples/figure_2020-08-16_104430.jpg)
