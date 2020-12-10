@@ -22,9 +22,25 @@ OR
 python similar_images_finder.py --query <input filepath> --num_images <number of images>
 ```
 
-Example:
+Example_1:
 ```
-python similar_images_finder.py -q images/0.jpg -n 9
+python similar_images_finder.py --query images/0.jpg --num_images 9
 ```
 Output:
 ![](output_samples/figure_2020-08-16_104430.jpg)
+
+
+Example_2:
+```
+python similar_images_finder.py --query images/8.jpg --num_images 16
+```
+Output:
+![](output_samples/figure_2020-08-16_122851.jpg)
+
+Example_3:
+```
+python similar_images_finder.py --query images/7.jpg --num_images 9
+```
+(Here, only 5 similar images could be found)
+Output:
+![](output_samples/figure_2020-08-16_130251.jpg)
